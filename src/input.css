@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  /* font */
+  --font-inter: "Inter", sans-serif;
+
+  /* colors */
+  --color-primary: #4caf4f;
+  --color-body-head: #4d4d4d;
+  --color-body-paragraph: #717171;
+  --color-nav-links: #18191f;
+  --color-footer-bg: #263238;
+  --color-footer-head: #ffffff;
+  --color-footer-paragraph: #f5f7fa;
+  --color-neutral-gray: #89939e;
+}
+
+@layer components {
+  .navlinks {
+    @apply relative w-fit hover:text-primary after:bg-primary after:h-[2px] after:left-0 after:absolute after:w-full after:transition-transform after:origin-center after:scale-x-0 after:bottom-0 duration-1000 hover:after:scale-x-100 inline-block;
+  }
+}
