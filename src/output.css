@@ -518,6 +518,9 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
+  .h-60 {
+    height: calc(var(--spacing) * 60);
+  }
   .h-full {
     height: 100%;
   }
@@ -526,6 +529,9 @@
   }
   .h-screen {
     height: 100vh;
+  }
+  .h-svh {
+    height: 100svh;
   }
   .max-h-none {
     max-height: none;
@@ -547,6 +553,9 @@
   }
   .w-12 {
     width: calc(var(--spacing) * 12);
+  }
+  .w-60 {
+    width: calc(var(--spacing) * 60);
   }
   .w-fit {
     width: fit-content;
