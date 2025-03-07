@@ -2389,6 +2389,11 @@
       display: none;
     }
   }
+  .md\:h-80 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 80);
+    }
+  }
   .md\:h-auto {
     @media (width >= 48rem) {
       height: auto;
