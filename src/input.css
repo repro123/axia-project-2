@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* font */
   --font-inter: "Inter", sans-serif;
@@ -13,10 +15,21 @@
   --color-footer-head: #ffffff;
   --color-footer-paragraph: #f5f7fa;
   --color-neutral-gray: #89939e;
+
+  /* dark mode colors */
+  --color-primary-dark: #66bb6a;
+  --color-bodyBg-dark: #121212;
+  --color-bodyAltBg-dark: #1a1a1a;
+  --color-surface-container-dark: #242424;
+  --color-cta-dark-hover: #81c784;
+  --color-dark-header: #e0e0e0;
+  --color-dark-primary-paragraph: #b3b3b3;
+  --color-dark-secondary-paragraph: #9e9e9e;
+  --color-borders: #3d3d3d;
 }
 
 @layer components {
   .navlinks {
-    @apply relative w-fit hover:text-primary after:bg-primary after:h-[2px] after:left-0 after:absolute after:w-full after:transition-transform after:origin-center after:scale-x-0 after:bottom-0 duration-1000 hover:after:scale-x-100 inline-block;
+    @apply relative w-fit hover:text-primary after:bg-primary after:h-[2px] after:left-0 after:absolute after:w-full after:transition-transform after:origin-center after:scale-x-0 after:bottom-0 duration-1000 hover:after:scale-x-100 inline-block dark:text-footer-paragraph;
   }
 }

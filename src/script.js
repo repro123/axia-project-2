@@ -1,10 +1,36 @@
 "use strict";
 
+// selecting all elements necessary for mobile nav toggle
 const toggleNavBtn = document.querySelector("#toggleNav");
 const mobileMenu = document.querySelector("#mobileMenu");
 const overlay = document.querySelector("#overlay");
 const body = document.querySelector("body");
 const navLinks = document.querySelectorAll(".navlinks");
+
+// selecting all elements necessary for dark/light theme toggling
+const toggleThemeBtn = document.querySelector("#toggleTheme");
+const html = document.querySelector("html");
+const darkModeIcon = document.querySelector("#darkMode");
+const lightModeIcon = document.querySelector("#lightMode");
+const lightModeLogo = document.querySelector("#lightModeLogo");
+const darkModeLogo = document.querySelector("#darkModeLogo");
+
+// toggle mode function
+function toggleTheme() {
+  html.classList.toggle("dark");
+  lightModeIcon.classList.toggle("hidden");
+  darkModeIcon.classList.toggle("hidden");
+  lightModeLogo.classList.toggle("hidden");
+  darkModeLogo.classList.toggle("hidden");
+
+  if (html.classList.contains("dark")) {
+    toggleThemeBtn.setAttribute("aria-label", "Change to light mode");
+  } else {
+    toggleThemeBtn.setAttribute("aria-label", "Change to dark mode");
+  }
+}
+
+toggleThemeBtn.addEventListener("click", toggleTheme);
 
 toggleNavBtn.addEventListener("click", function () {
   const isExpanded = toggleNavBtn.getAttribute("aria-expanded") === "true";
