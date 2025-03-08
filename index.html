@@ -19,42 +19,44 @@
       class="p-4 bg-footer-paragraph z-[2] **:focus:outline **:focus:outline-primary sticky top-0 dark:bg-bodyAltBg-dark"
     >
       <div
-        class="flex items-center justify-between w-full max-w-6xl mx-auto md:pt-4 md:grid md:grid-cols-[1fr_3fr] relative"
+        class="flex items-center justify-between w-full max-w-6xl mx-auto md:pt-4 md:grid md:grid-cols-[1fr_3fr]"
       >
-        <a href="#" aria-label="Nexcent Home">
-          <img
-            src="./images/Logo.png"
-            alt="Nexcent Logo"
-            id="lightModeLogo"
-            class="w-40"
-          />
-          <img
-            src="./images/footerlogo.png"
-            alt="Nexcent Logo"
-            class="hidden w-40"
-            id="darkModeLogo"
-          />
-        </a>
+        <div class="flex gap-12 items-center h-full md:gap-8 lg:gap-12">
+          <a href="#" aria-label="Nexcent Home">
+            <img
+              src="./images/Logo.png"
+              alt="Nexcent Logo"
+              id="lightModeLogo"
+              class="w-40"
+            />
+            <img
+              src="./images/footerlogo.png"
+              alt="Nexcent Logo"
+              class="hidden w-40"
+              id="darkModeLogo"
+            />
+          </a>
 
-        <button
-          class="rounded-full absolute w-12 h-12 left-1/2 top-1 translate-x-1/2 cursor-pointer grid place-items-center z-[100] lg:top-4 lg:left-[calc(100%_-_21rem)] md:max-lg:left-[calc(100%_-_4rem)] md:max-lg:top-full"
-          aria-label="Change to dark mode"
-          title="Toggle Theme"
-          id="toggleTheme"
-        >
-          <img
-            src="./images/dark_mode_24dp_4CAF4F_FILL0_wght400_GRAD0_opsz24.png"
-            alt=""
-            id="darkMode"
-            class="w-8 h-8"
-          />
-          <img
-            src="./images/light_mode_24dp_4CAF4F_FILL0_wght400_GRAD0_opsz24.png"
-            alt=""
-            id="lightMode"
-            class="hidden w-8 h-8"
-          />
-        </button>
+          <button
+            class="relative z-50"
+            aria-label="Change to dark mode"
+            title="Toggle Theme"
+            id="toggleTheme"
+          >
+            <img
+              src="./images/dark_mode_24dp_4CAF4F_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+              id="darkMode"
+              class="w-8 h-8"
+            />
+            <img
+              src="./images/light_mode_24dp_4CAF4F_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+              id="lightMode"
+              class="hidden w-8 h-8"
+            />
+          </button>
+        </div>
 
         <div>
           <button
@@ -67,12 +69,12 @@
             <img
               src="./images/menu_24dp_4CAF4F_FILL0_wght400_GRAD0_opsz24.png"
               alt=""
-              class="w-12 h-12 cursor-pointer group-aria-expanded:hidden"
+              class="w-8 h-8 cursor-pointer group-aria-expanded:hidden"
             />
             <img
               src="./images/close_24dp_4CAF4F_FILL0_wght400_GRAD0_opsz24.png"
               alt=""
-              class="group-aria-[expanded=false]:hidden w-12 h-12"
+              class="group-aria-[expanded=false]:hidden w-8 h-8"
             />
           </button>
           <div
