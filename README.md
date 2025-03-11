@@ -102,6 +102,11 @@ A modern, accessible landing page featuring dark mode toggle and mobile-responsi
     });
     ```
 
+## Testing
+
+- Responsiveness tested with Mobile Simulator chrome extension, fully responsive on all devices
+- Site tested on [Page Speed site](https://pagespeed.web.dev/)
+
 ## License 📄
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
