@@ -66,9 +66,6 @@ A modern, accessible landing page featuring dark mode toggle and mobile-responsi
 - **CSS Custom Properties**
   Theme switching using CSS variables
 
-- **Smooth Color Transitions**
-  Animated theme changes with `transition` properties
-
 - **Dual-Themed Logo Support**
   Automatic logo switching based on theme:
 
@@ -79,7 +76,7 @@ A modern, accessible landing page featuring dark mode toggle and mobile-responsi
 
 ## JavaScript Features ⚡
 
-    ```javascript
+    ```js
     // Mobile Menu Toggle
     const toggleNav = () => {
     const isExpanded = toggleNavBtn.getAttribute("aria-expanded") === "true";
