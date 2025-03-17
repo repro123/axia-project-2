@@ -76,7 +76,6 @@ A modern, accessible landing page featuring dark mode toggle and mobile-responsi
 
 ## JavaScript Features ⚡
 
-    ```js
     // Mobile Menu Toggle
     const toggleNav = () => {
     const isExpanded = toggleNavBtn.getAttribute("aria-expanded") === "true";
@@ -94,7 +93,6 @@ A modern, accessible landing page featuring dark mode toggle and mobile-responsi
     document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeNav();
     });
-    ```
 
 ## Testing
 
