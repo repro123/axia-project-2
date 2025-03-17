@@ -40,9 +40,6 @@ A modern, accessible landing page featuring dark mode toggle and mobile-responsi
   - Escape key to close mobile menu
   - Visible focus outlines for interactive elements
 
-- **Reduced Motion Preferences Support**
-  Respects `@media (prefers-reduced-motion: reduce)`
-
 - **Accessible Contrast Ratios**
 
   WCAG 2.1 AA compliant in both light/dark themes
@@ -56,7 +53,7 @@ A modern, accessible landing page featuring dark mode toggle and mobile-responsi
   - `> 1024px`: Desktop layout
 
 - **Fluid Typography & Spacing**
-  Relative units (rem/%) and clamp() for scaling
+  Relative units (rem) for scaling
 
 - **Orientation-Adaptive Layouts**
   Adjusts to portrait/landscape modes
@@ -69,9 +66,6 @@ A modern, accessible landing page featuring dark mode toggle and mobile-responsi
 - **CSS Custom Properties**
   Theme switching using CSS variables
 
-- **Smooth Color Transitions**
-  Animated theme changes with `transition` properties
-
 - **Dual-Themed Logo Support**
   Automatic logo switching based on theme:
 
@@ -82,7 +76,6 @@ A modern, accessible landing page featuring dark mode toggle and mobile-responsi
 
 ## JavaScript Features ⚡
 
-    ```javascript
     // Mobile Menu Toggle
     const toggleNav = () => {
     const isExpanded = toggleNavBtn.getAttribute("aria-expanded") === "true";
@@ -100,7 +93,6 @@ A modern, accessible landing page featuring dark mode toggle and mobile-responsi
     document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeNav();
     });
-    ```
 
 ## Testing
 
@@ -113,5 +105,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ---
 
-**Crafted with ♥ by [Bello Ibrahim](https://github.com/repro123)**  
+**Crafted with ♥ by [Bello Ibrahim](https://github.com/repro123/)**  
 [![GitHub Stars](https://img.shields.io/github/stars/repro123/nexcent-landing-page?style=social)](https://github.com/repro123/axia-project-2)
